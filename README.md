@@ -8,13 +8,12 @@
 @RestController
 public class HelloController {
 @Autowired
-	private SSNservice ssnService;
+private SSNservice ssnService;
 @PostMapping("/save")
 	SSNResponse saveSSN(@RequestBody SSNRequest ssnRequest){
 	return ssnService.saveSSN(ssnRequest);
 		
-	}
-}
+	}}
 
 
 //  Service
